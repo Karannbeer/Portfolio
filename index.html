@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <nav>
+                <h1>Portfolio.</h1>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#portfolio">Project</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <h1>Hi I am </h1>
+                <h2>Karanbeer Singh Bungai</h2>
+                <p>Frontend Developer</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="about">
+        <div class="container1">
+            <div class="content">
+                <h1 class="subtitle">About Me</h1>
+                <p class="para"> Hi, I am Karanbeer Singh Bungai, I am form Nanded, Maharashtra. Currently studying in final year of B.TECH in Electronics and Telecommunication Engineering. I have completed my H.S.C from N.E.S Science college, Nanded & S.S.C form Oxford The Global School, Nanded. In terms of strength I consider myself a quick-learner.
+                In Terms of Project we are intrested in buliding project with AI and ML.
+                </p>
+
+                <div class="tab-title">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Python</span></li>
+                        <li><span>HTML,CSS</span></li>
+                        <li><span>C++</span></li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2020-2024:</span><br>Currently in Final Year at Shri Guru Gobind Singhji Institute of Engineering and Technology, Nanded </li>
+                        <li><span>2018-2020:</span><br>N.E.S Science college, Nanded </li>
+                        <li><span>2017-2018:</span><br>Oxford the Global School, Nanded </li>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="portfolio">
+        <div class="container2">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="My project1.png">
+                    <div class="layer">
+                        <h3>Photograpy Website</h3>
+                        <p>This is a Basic CSS and HTMl website. 
+                        I have made it during my learning process </p>
+                        <a href="/new_proj/other_proj/photography/photography.html" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="My project 2.png">
+                    <div class="layer">
+                        <h3>Calculator</h3>
+                        <p> In this project I made a calculator using HTML,CSS and JavaScript. It is a functional calculator 
+                        </p>
+                        <a href="/new_proj/other_proj/calci/calci.html" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="My project 3.png">
+                    <div class="layer">
+                        <h3>To-do App</h3>
+                        <p>This is a Basic CSS and HTMl and Java Script website. 
+                        In this we can add our daily what to do things and can cancel whenever we want.</p>
+                        <a href="/new_proj/other_proj/To-do/to-do.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+    <div id="contact">
+        <div class="container3">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class='bx bx-envelope'></i>karanbeersinhbungai@gmail.com</p>
+                    <div class="social">
+                        <a href="#"><i class='bx bxl-instagram' ></i></a>
+                        <a href="https://twitter.com/YuvrajS22371586"><i class='bx bxl-twitter' ></i></a>
+                        <a href="#"><i class='bx bxl-linkedin' ></i></a>
+                    </div>
+                    <a href="My Resume 1.pdf" target="_blank" download class="btn-2">Download Cv</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message" ></textarea>
+                        <button type="submit" class="btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copy">
+            <p>Made By Karanbeer &copy 2024</p>
+        </div>
+    </div>
+
+
+
+    <script src="app.js"></script>
+</body>
+</html>
